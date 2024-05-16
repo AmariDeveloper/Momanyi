@@ -1,0 +1,216 @@
+.about-hero-section{
+      display: grid;
+      grid-template-columns: 1fr 1.5fr 1fr;
+      position: relative;
+      height: 100vh;
+      border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+}
+.about-hero-image{
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../assets/save-the-children-uganda.jpg") no-repeat;
+      background-size: cover;
+      background-position: top;
+}
+.about-hero-section .hero-text{
+       position: absolute;
+       width: 1090px;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+       text-align: center;
+}
+.hero-text h3{
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: rgb(220, 220, 220);
+}
+.hero-text h1{
+      font-size: 65px;
+      font-weight: 500;
+}
+.about-story-section{
+      padding: 100px 0;
+}
+.about-story-content{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.about-story-content h3{
+     font-size: 20px;
+     text-transform: uppercase;
+     font-weight: 300;
+     color: var(--main-color);
+     margin-top: 20px;
+}
+
+.about-statements{
+      padding-bottom: 100px;
+}
+.about-story-texts h2{
+       font-size: 45px;
+       font-weight: 400;
+       line-height: 1.5;
+}
+
+.about-story-columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+.about-story-texts p{
+      font-size: 20px;
+      line-height: 1.5;
+      font-weight: 300;
+      color: gainsboro;
+      margin-bottom: 20px;
+}
+.about-statements .images{
+    margin-bottom: 50px;
+}
+.about-images-row{
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+}
+.about-images-row .single-image-moja:nth-child(1){
+       width: 80%;
+}
+
+.about-statements h3{
+     font-size: 25px;
+     font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.values-intro{
+      width: 800px;
+      margin: 50px auto;
+      text-align: center;
+}
+.values-intro h2{
+      font-size: 55px;
+      font-weight: 500;
+      margin-bottom: 10px;
+}
+.values-intro p{
+     font-size: 20px;
+     font-weight: 300;
+     line-height: 1.5;
+     color: gainsboro;
+}
+.value-moja .icon{
+      width: 50px;
+      height: 50px;
+      margin: auto;
+}
+.values-row{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 30px;
+}
+.value-moja{
+        text-align: center;
+}
+.value-moja .icon img{
+      filter: invert(100);
+      -webkit-filter: invert(100);
+}
+
+.value-moja h4{
+    font-size: 25px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+.value-moja p{
+     font-size: 17px;
+     font-weight: 300;
+     color: gainsboro;
+     line-height: 1.5;
+}
+
+@media(max-width: 1150px){
+    .about-hero-section .hero-text{
+           width: 90%;
+    }
+}
+@media(max-width: 1090px){
+     .about-hero-section{
+           grid-template-columns: 1fr;
+           height: auto;
+     }
+     .about-hero-column,
+     .about-hero-image{
+            height: 500px;
+     }
+     .about-hero-column.first{
+             display: none;
+     }
+     .about-hero-section .hero-text{
+           width: 90%;
+           position: relative;
+           margin: auto;
+           padding: 160px 0 100px 0;
+           top: 0;
+           left: 0;
+           transform: translate(0);
+           -webkit-transform: translate(0);
+           -moz-transform: translate(0);
+           -ms-transform: translate(0);
+           -o-transform: translate(0);
+}
+     .hero-text h1,
+     .values-intro h2{
+           font-size: 50px;
+     }
+     .about-story-content{
+            grid-template-columns: 1fr;
+     }
+     .about-story-columns{
+            grid-template-columns: 1fr;
+            gap:0px;
+     }
+     .values-intro{
+           width: 100%;
+     }
+     .values-row{
+            grid-template-columns: 1fr 1fr;
+     }
+}
+
+@media(max-width: 768px){
+       .hero-text h1,
+       .values-intro h2{
+               font-size: 40px;
+       }
+       .about-story-texts h2{
+             font-size: 35px;
+       }
+       .values-row{
+             grid-template-columns: 1fr;
+       } 
+       .about-statements h3{
+            font-size: 21px;
+       }
+}
+
+@media(max-width: 500px){
+       .hero-text h1{
+             font-size: 35px;
+             margin-top: 10px;
+       }
+       .about-hero-image{
+              height: 400px;
+       }
+       .about-story-texts h2{
+             font-size: 30px;
+       }
+       .about-images-row .single-image-moja:nth-child(1){
+                width: 100%;
+      }
+}

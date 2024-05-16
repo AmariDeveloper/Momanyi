@@ -1,12 +1,15 @@
 import { Link, NavLink } from "react-router-dom"
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
-import { useEffect, useRef } from "react";
-
+import { useContext, useEffect, useRef } from "react";
+import { HiOutlineMenuAlt1 } from "react-icons/hi";
+import { sidebarContext } from "./sidebarcontext";
 gsap.registerPlugin(ScrollTrigger);
 
 const Header = () => {
  const bgRef = useRef();
+ const [sidebarStatus, setSidebarStatus] = useContext(sidebarContext);
+ const openMobileMenu = () => setSidebarStatus(!sidebarStatus)
 
  useEffect(() => {
          const headerWrapper = bgRef.current;
@@ -37,7 +40,7 @@ const Header = () => {
                                               <ul>
                                                          <li><NavLink to={'/'}>Home</NavLink></li>
                                                          <li><NavLink to={'/about'}>About</NavLink></li>
-                                                         <li><NavLink to={'/mo-mentors'}>Mo Mentors</NavLink></li>
+                                                         <li><NavLink to={'/mo-mentors'}>Toto Bridge</NavLink></li>
                                               </ul>
                                    </div>
                                    <Link to={'/'} className="logo">
@@ -51,7 +54,11 @@ const Header = () => {
                                               <div className="header-call-to-action">
                                                         <Link to={'/contact'}>Work with Me <span></span></Link>
                                               </div>
+                                              <div className="mobile-btn" onClick={openMobileMenu}>
+                                                      <span><HiOutlineMenuAlt1 /></span>
+                                             </div>
                                    </div>
+                                   
                         </div>
               </div>
     </header>
