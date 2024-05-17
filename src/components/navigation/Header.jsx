@@ -40,7 +40,7 @@ const Header = () => {
                                               <ul>
                                                          <li><NavLink to={'/'}>Home</NavLink></li>
                                                          <li><NavLink to={'/about'}>About</NavLink></li>
-                                                         <li><NavLink to={'/mo-mentors'}>Toto Bridge</NavLink></li>
+                                                         <li><NavLink to={'/expertise'}>Expertise</NavLink></li>
                                               </ul>
                                    </div>
                                    <Link to={'/'} className="logo">
@@ -49,7 +49,7 @@ const Header = () => {
                                    <div className="right-nav">
                                               <ul>
                                                          <li><NavLink to={'/projects'}>Projects</NavLink></li>
-                                                         <li><NavLink to={'/resources'}>Resources</NavLink></li>
+                                                         <li><NavLink to={'/'}>Resources</NavLink></li>
                                               </ul>
                                               <div className="header-call-to-action">
                                                         <Link to={'/contact'}>Work with Me <span></span></Link>
