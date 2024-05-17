@@ -11,7 +11,7 @@ const Services = () => {
                                                         <h3>How I can help You</h3>
                                                         <p> I amplify voices and drive Change and use the power of communication to empower others and create a more impactful future.</p>
                                             </div>
-                                            <Link to={'/'}>Explore All <span></span></Link>
+                                            <Link to={'/expertise'}>Explore All <span></span></Link>
                                   </div>
                                   <div className="services-row">
                                               { services.map(item=> 

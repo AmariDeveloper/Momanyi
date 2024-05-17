@@ -1,5 +1,7 @@
+import { useNavigate } from "react-router-dom"
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="hero-section">
               <div className="hero-texts">
@@ -14,7 +16,7 @@ const HeroSection = () => {
               <div className="hero-action">
                           <div className="middle-strip">
                                    <div className="rotating-border">
-                                              <div className="call-to-action">
+                                              <div className="call-to-action" onClick={() => navigate("/projects")}>
                                                        <h4>My Work</h4>
                                                </div>
                                    </div>
