@@ -33,7 +33,7 @@ const MobileMenu = () => {
                             <li><NavLink to={'/about'}>About</NavLink></li>
                             <li><NavLink to={'/projects'}>Projects</NavLink></li>
                             <li><NavLink to={'/expertise'}>Expertise</NavLink></li>
-                            <li><NavLink to={'/'}>Resources</NavLink></li>
+                            <li><NavLink to={'/c'}>Resources</NavLink></li>
                             <li><NavLink to={'/contact'}>Contact</NavLink></li>
               </ul>
     </div>

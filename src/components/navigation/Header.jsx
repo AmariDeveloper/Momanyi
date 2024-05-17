@@ -49,7 +49,7 @@ const Header = () => {
                                    <div className="right-nav">
                                               <ul>
                                                          <li><NavLink to={'/projects'}>Projects</NavLink></li>
-                                                         <li><NavLink to={'/'}>Resources</NavLink></li>
+                                                         <li><NavLink to={'/contact'}>Resources</NavLink></li>
                                               </ul>
                                               <div className="header-call-to-action">
                                                         <Link to={'/contact'}>Work with Me <span></span></Link>
